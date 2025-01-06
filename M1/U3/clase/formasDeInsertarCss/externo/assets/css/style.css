@@ -1,0 +1,25 @@
+/* Esto es un comentario css */
+
+body {
+  background-color: blue;
+}
+
+img {
+  background-color: yellow;
+  width: 320px; /* Ancho */
+  height: 400px; /* Alto */
+  border-radius: 12px;
+  object-fit: contain; /* cover o contain => como se comporta la imagen*/
+}
+
+p {
+  background-color: red;
+
+  color: yellow;
+  padding: 10px; /* Margen interno */
+
+  border: 2px solid black; /* Borde */
+  border-radius: 12px; /* Redondeo de esquinas */
+
+  margin: 10px; /* Margen externo */
+}

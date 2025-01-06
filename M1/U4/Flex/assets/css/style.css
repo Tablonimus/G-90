@@ -1,0 +1,11 @@
+#p-container {
+  display: flex; /* Seleccionamos flex como manera de disponer los elementos */
+  flex-direction: row; /* Seleccionamos la dirección: Fila o columna | Por default, flex-direction es row*/
+  gap: 10px; /* Solamente funciona con flex  => es el margen interno entre los hijos del container*/
+
+  background-color: blue;
+}
+
+p {
+  background-color: red;
+}

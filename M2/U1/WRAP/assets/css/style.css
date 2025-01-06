@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes-container {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row; /* si es row */
+  justify-content: center; /* maneja el eje horizontal */
+  gap: 1rem; /* Separación entre hijos */
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 12px;
+}
+
+img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.content{
+  /* background-color: red; */
+  height: 70px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center;  */
+  gap: 2px;
+}
+
+#name{
+  text-align: center;
+  font-size: 24px;
+}
+
+#price{
+  text-align: end;
+  font-size: 24px;
+  color: green;
+}

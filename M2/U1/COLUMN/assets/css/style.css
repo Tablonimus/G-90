@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes-container {
+  background-color: yellow;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Si es COLUMN, El eje principal es el X (vertical) || Si es ROW, El eje principal es el Y (Horizontal)  */
+  justify-content: center; /* Eje principal */
+  align-items: center; /* Eje secundario */
+  gap: 1rem;
+}
+
+.box {
+  width: 30%;
+  height: fit-content;
+  background-color: blue;
+  border: 1px solid green;
+}

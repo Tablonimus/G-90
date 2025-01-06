@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#p-container {
+  display: flex; /*Seleccionamos flex como manera de disponer los elementos */
+  flex-direction: row; /* Seleccionamos la dirección: Fila o columna | Por default, flex-direction es row*/
+  /* wrap => */
+  flex-wrap: wrap;
+  /* Justify content alinea en base al eje principal*/
+  justify-content: center;
+  /*  */
+  gap: 5px; /* Solamente funciona con flex  => es el margen interno entre los hijos del container*/
+  background-color: blue;
+}
+
+p {
+  background-color: red;
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+}
+
+img {
+  object-fit: contain;
+}

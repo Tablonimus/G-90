@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes-container{
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;/* si es row */
+    justify-content: center;/* maneja el eje horizontal */
+    align-items: center; /* maneja el eje vertical */
+    gap: 1rem;/* Separación entre hijos */
+
+}
+
+.box{
+    width: 20%;
+    height: fit-content;
+    background-color: blue;
+}
