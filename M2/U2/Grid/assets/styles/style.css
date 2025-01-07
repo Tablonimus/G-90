@@ -1,0 +1,15 @@
+.grid-container {
+  background-color: blue;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+  padding: 5px;
+}
+
+.grid-item {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 2px;
+}

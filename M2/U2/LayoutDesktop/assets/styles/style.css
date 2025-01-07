@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  grid-area: nav;
+  padding: 3px;
+  background-color: gray;
+}
+
+aside {
+  grid-area: aside;
+  background-color: aquamarine;
+  width: 10vw;
+  overflow-y: auto;
+}
+
+header {
+  grid-area: header;
+  background-color: beige;
+}
+
+main {
+  grid-area: main;
+  background-color: chartreuse;
+  overflow-y: auto;
+}
+
+footer {
+  grid-area: footer;
+  background-color: coral;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  grid-area: nav;
+  padding: 3px;
+  height: 10vh;
+  background-color: gray;
+}
+
+header {
+  grid-area: header;
+  height: 20vh;
+  background-color: beige;
+}
+main {
+  grid-area: main;
+  height: 60vh;
+  background-color: chartreuse;
+}
+footer {
+  grid-area: footer;
+  background-color: coral;
+  height: 10vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+  row-gap: 5px;
+  column-gap: 5px;
+}
