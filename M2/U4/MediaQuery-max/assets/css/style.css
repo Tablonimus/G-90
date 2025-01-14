@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 2em;
+}
+
+
+
+/* Bloque CSS para vista Desktop de 0 hasta 1024 */
+@media (max-width: 1024px) {
+  body {
+    background-color: rgb(255, 234, 0);
+    color: rgb(199, 0, 0);
+  }
+}
+
+
+/* Bloque CSS para vista Desktop como minimo 1024 hasta ... */
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(255, 0, 0);
+    color: rgb(199, 196, 0);
+  }
+}
