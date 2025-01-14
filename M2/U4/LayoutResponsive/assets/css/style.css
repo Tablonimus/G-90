@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  grid-area: menu;
+  padding: 10px;
+  background-color: #0037a1;
+  color: white;
+}
+
+main {
+  grid-area: seccion-principal;
+  padding: 10px;
+  overflow: auto;
+}
+
+footer {
+  grid-area: pie-de-pagina;
+  background-color: #d02a1e;
+  padding: 10px;
+  color: white;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas:
+    "menu"
+    "seccion-principal"
+    "pie-de-pagina";
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas:
+      "menu seccion-principal"
+      "menu seccion-principal"
+      "menu  pie-de-pagina";
+  }
+}
