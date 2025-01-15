@@ -1,0 +1,1 @@
+mkdir -p assets/css assets/img assets/js && touch index.html README.md assets/css/style.css assets/js/index.js
