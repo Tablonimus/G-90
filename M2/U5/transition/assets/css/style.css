@@ -1,0 +1,27 @@
+/* CSS */
+button {
+  background-color: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out 0s;
+}
+
+button:hover {
+  background-color: rgb(255, 140, 0);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: all 3s ease;
+}
+
+.box:hover {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
