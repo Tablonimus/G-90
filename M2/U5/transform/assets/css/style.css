@@ -1,0 +1,24 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform: rotate(10deg) scale(1.1);
+}
+
+.box1:hover {
+  transform: rotate(0deg) scale(1);
+}
+
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  translate: 10px 10px;
+  /* transform: rotate(10deg) scale(1.1); */
+}
+
+.box2:hover {
+  transform: rotate(0deg) scale(1) ;
+  translate: 10px 10px;
+}
