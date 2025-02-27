@@ -37,6 +37,8 @@ let nulo = null; //Null => null indica que su valor es nulo
 
 let indefinido = undefined; //💀 Undefined
 
+let soyUnNumeroRaro = NaN //Not a Number => es un número
+
 /* -----------------------OPERADORES MATEMÁTICOS------------------------- */
 /* Las operaciones matemáticas arrojan un valor de salida único */
 let numeroFavorito = 22;
@@ -71,7 +73,7 @@ let mayorOIgualQue = 5 >= 10; //false
 let esMayoroIgualQue = 10 >= 10; //true
 
 /* Igualdad => compara si los dos valores son iguales, sin importar el tipo de dato */
-let sonIguales = 5 == 5; //true
+let sonIguales = 5 == 5; // true
 let sonIguales2 = "5" == "5"; // true
 let sonIguales3 = 555 == "456"; // false
 let sonIguales4 = 555 == "555"; // true
