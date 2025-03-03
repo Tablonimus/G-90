@@ -28,16 +28,24 @@ let decimal = 2.5; //Number
 let negativo = -2; //Number
 let negativoDecimal = -2.5; //Number
 let notAnumber = NaN; //Number
+let soyUnNumeroRaro = NaN; //Not a Number => es un número
 
 /* BOOLEANOS => VERDADERO/FALSO | ENCENDIDO/APAGADO  | SI/NO */
 let verdadero = true; //Boolean
 let falso = false; //Boolean
 
+/* NULL */
 let nulo = null; //Null => null indica que su valor es nulo
 
+/* UNDEFINED */
 let indefinido = undefined; //💀 Undefined
 
-let soyUnNumeroRaro = NaN //Not a Number => es un número
+/* ARRAY */
+let arrayNuevo = [];
+
+/* OBJETOS */
+
+let objetoNuevo = {};
 
 /* -----------------------OPERADORES MATEMÁTICOS------------------------- */
 /* Las operaciones matemáticas arrojan un valor de salida único */
