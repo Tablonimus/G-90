@@ -1,0 +1,12 @@
+.articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.articulo {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  width: 25%;
+}
