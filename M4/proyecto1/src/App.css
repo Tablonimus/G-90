@@ -1,0 +1,32 @@
+#side-bar {
+  background-color: rgb(30, 88, 24);
+  height: 100vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+#logo-banner {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  background-color: #45a049;
+}
+.menu-btn:active {
+  background-color: #3e8e41;
+}

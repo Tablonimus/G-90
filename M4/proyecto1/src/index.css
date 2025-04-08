@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+#padre {
+  display: flex;
+  flex-direction: row;
+}
