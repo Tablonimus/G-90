@@ -38,8 +38,8 @@ function App() {
         </div>
       ) : null}
       <h1>API</h1>
-      <section>
-      {/* Friends section contanier*/}
+      <section className="d-flex">
+        {/* Friends section contanier*/}
         {/* cards section */}
         {persons.length
           ? persons.map((person, index) => (
