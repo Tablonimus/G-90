@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+.active {
+  color: darkgreen;
+  font-weight: bold;
+}
