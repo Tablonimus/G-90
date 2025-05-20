@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(71, 71, 71);
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.active-true {
+  color: yellow;
+  font-weight: bold;
+  /* text-decoration: none; */
+}
+
+.active-false {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  text-decoration: none;
+}
