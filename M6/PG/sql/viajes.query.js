@@ -33,21 +33,32 @@ export const obtenerViajesPorId = async (id) => {
   const query = "SELECT * FROM viajes WHERE id = $1";
   const values = [id];
 
-  const { rows, rowCount } = await pool.query(query, values);
+  const { rows } = await pool.query(query, values);
 
-  console.log("Total de resultados: ", rowCount);
-  console.log("Filas: ", rows);
-  return rows;
+  return rows[0] || null;
 };
 
 export const agregarViaje = async (destino, presupuesto) => {
-  const consulta = "INSERT INTO viajes values (DEFAULT,  $1,    $2)";
-  //                                             id    dest   pres
-  const values = [destino, presupuesto];
+  const consulta =
+    "INSERT INTO viajes values (DEFAULT,  $1,    $2) RETURNING *";
 
+  const values = [destino, presupuesto];
   const result = await pool.query(consulta, values);
 
-  console.log("Viaje agregado");
+  return result.rows[0];
+};
 
-  return result.rows;
+export const modificarPresupuesto = async (presupuesto, id) => {
+  const consulta =
+    "UPDATE viajes SET presupuesto = $1 WHERE id = $2 RETURNING *";
+  const values = [presupuesto, id];
+  const result = await pool.query(consulta, values);
+  return result.rows[0];
+};
+
+export const eliminarViaje = async (id) => {
+  const consulta = "DELETE FROM viajes WHERE id = $1 RETURNING *";
+  const values = [id];
+  const result = await pool.query(consulta, values);
+  return result.rows[0];
 };
